@@ -10,13 +10,6 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.HashMap;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Magorium
- * Date: 7/2/14
- * Time: 4:19 PM
- * To change this template use File | Settings | File Templates.
- */
 public class RsAppleStub implements AppletStub {
 
     private String link = "http://oldschool12.runescape.com/";
@@ -29,12 +22,12 @@ public class RsAppleStub implements AppletStub {
 
     @Override
     public boolean isActive() {
-        return true;  //To change body of implemented methods use File | Settings | File Templates.
+        return true;
     }
 
     @Override
     public URL getDocumentBase() {
-        return getCodeBase();  //To change body of implemented methods use File | Settings | File Templates.
+        return getCodeBase();
     }
 
     @Override
@@ -44,22 +37,22 @@ public class RsAppleStub implements AppletStub {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return null;
     }
 
     @Override
     public String getParameter(String name) {
-        return parameters.get(name);  //To change body of implemented methods use File | Settings | File Templates.
+        return parameters.get(name);
     }
 
     @Override
     public AppletContext getAppletContext() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return null;
     }
 
     @Override
     public void appletResize(int width, int height) {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 
     public String getLink(){
